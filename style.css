@@ -16,6 +16,7 @@ body {
     backdrop-filter: blur(20px);
     position: sticky;
     top: 0;
+    z-index: 1099;
 }
 
 .navbar img {
@@ -75,8 +76,8 @@ body {
     border: 1px solid;
     margin: 0px 10px 0px 20px;
     cursor: pointer;
-    border-image: linear-gradient(to left, #ADFF00 , #FFFF08) 1;
-    -webkit-border-radius: 5px;
+    border-image: linear-gradient(to left, #ADFF00, #FFFF08) 1;
+    -webkit-border-radius: 5px; 
 }
 
 .connect-wallet p {
@@ -203,6 +204,11 @@ body {
 
 /* main-content */
 
+.comon-m-p {
+    padding: 0px 176px;
+    margin: 110px 0px 0px;
+}
+
 .main-content {
     width: 100%;
     height: 500px;
@@ -281,7 +287,7 @@ body {
     height: 50px;
     border-radius: 5px;
     border: 1px solid;
-    border-image: linear-gradient(to left, #ADFF00 , #FFFF08) 1;
+    border-image: linear-gradient(to left, #ADFF00, #FFFF08) 1;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.5px);
@@ -304,12 +310,173 @@ body {
     text-fill-color: transparent;
 }
 
-.img-main{
+.img-main {
     max-width: 100%;
     float: right;
 }
 
-.img-main img{
+.img-main img {
     width: 83%;
     height: auto;
+}
+
+.see-all {
+    width: 80px;
+    height: 46px;
+    background: linear-gradient(268.72deg, #ADFF00 0%, #FFFF08 100%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featured-collection P {
+    width: 289px;
+    height: 30px;
+    /* font-family: 'MonoSpec'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+}
+
+.see-all p {
+    width: 54px;
+    height: 15px;
+    /* font-family: 'MonoSpec'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+
+/* slider */
+
+.slider {
+    margin-top: 24px;
+}
+
+.card-comon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 315px;
+    height: 385px;
+    border-radius: 10px;
+}
+
+.card-comon img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-comon p {
+    /* font-family: 'MonoSpec'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 10px;
+}
+
+.shaddow {
+    width: 315px;
+    height: 179px;
+    background: linear-gradient(0deg, #2E3135 0%, rgba(26, 28, 31, 0) 100%);
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+}
+
+.varified {
+    width: 13px !important;
+    height: 13px !important;
+    margin: 0px 0px 0px 7px !important;
+}
+
+.card1 {
+    background-image: url('images/card1.png');
+}
+
+.card2 {
+    background-image: url('images/card2.png');
+}
+
+.card3 {
+    background-image: url('images/card3.png');
+}
+
+.card4 {
+    background-image: url('images/card4.png');
+}
+
+/* Top collections */
+
+.top-collection-1 {
+    width: 411px;
+    height: 82px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.top-collection-1:hover {
+    background: #232529;
+    border: 1px solid #2C2E31;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile-rank img {
+    width: 52px;
+    height: 52px;
+    margin: 0px 20px 0px 0px;
+}
+
+.name-profile-h3 h3 {
+    /* font-family: 'MonoSpec'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    margin: 0px 0px 5px 0px;
+    text-transform: uppercase;
+}
+
+.nick-name-profile-p p {
+    /* font-family: 'Jura'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.success {
+    /* font-family: 'Jura'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ADFF00;
+    margin: 0;
+    padding: 0;
+}
+
+.alert {
+    /* font-family: 'Jura'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+    color: #FF5D1C;
 }
