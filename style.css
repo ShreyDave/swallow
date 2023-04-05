@@ -14,7 +14,7 @@ body {
     background: rgba(26, 28, 31, 0.9);
     border: 1px solid #2C2E31;
     backdrop-filter: blur(20px);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1099;
 }
@@ -69,15 +69,42 @@ body {
 }
 
 .connect-wallet {
+    --b: 1px;
+    background: linear-gradient(269.02deg, #adff00 0%, #ffff08 99.78%);
+    -webkit-background-clip: text;
+    letter-spacing: -0.05em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 11px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
     width: 140px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.5px);
-    border: 1px solid;
+    text-decoration: none;
+    padding-inline: 7.5px;
     margin: 0px 10px 0px 20px;
     cursor: pointer;
-    border-image: linear-gradient(to left, #ADFF00, #FFFF08) 1;
-    -webkit-border-radius: 5px;
+}
+
+.connect-wallet::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border: var(--b) solid transparent;
+    border-radius: 5px;
+    background: inherit;
+    background-origin: border-box;
+    background-clip: border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    -webkit-mask-repeat: no-repeat;
 }
 
 .connect-wallet p {
@@ -267,7 +294,7 @@ body {
     background: linear-gradient(268.72deg, #ADFF00 0%, #FFFF08 100%);
     border-radius: 5px;
     margin-right: 10px;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .explore p {
@@ -278,20 +305,38 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.1em
     color: #000000;
 }
 
 .create {
+    --b: 1px;
+    background: linear-gradient(269.02deg, #adff00 0%, #ffff08 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px;
+    position: relative;
     width: 140px;
-    height: 50px;
+    cursor: pointer !important;
+}
+
+.create::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border: var(--b) solid transparent;
     border-radius: 5px;
-    border: 1px solid;
-    border-image: linear-gradient(to left, #ADFF00, #FFFF08) 1;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.5px);
-    border-radius: 5px;
+    background: inherit;
+    background-origin: border-box;
+    background-clip: border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    -webkit-mask-repeat: no-repeat;
 }
 
 .create P {
@@ -302,7 +347,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.1em;
     background: linear-gradient(269.02deg, #ADFF00 0%, #FFFF08 99.78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -355,12 +400,18 @@ body {
 /* slider */
 
 .slider {
-    max-width: 1301px;
+    max-width: 1310px;
     margin-top: 24px;
 }
 
-.slick-next:before {
+.slick-next {
     content: '';
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    background: #282B30;
+    border: 1px solid #2C2E31;
+    border-radius: 15px;
 }
 
 .slick-prev:before {
@@ -578,4 +629,38 @@ option {
     border-color: transparent;
     outline: none;
     box-shadow: none;
+}
+
+/* .form-select::-ms-expand {
+    display: none !important;
+}
+
+.form-select:disabled::-ms-expand {
+    display: none !important;
+} */
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+    width: 100px;
+    padding: 10px;
+    border: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+    display: none;
+}
+
+.backgroundClass {
+    background: linear-gradient(to right, #adff00 0%, #303f11 45%, transparent 50%, transparent 70%, #ff6600 100%);
+    filter: blur(160px);
+    width: 98vw;
+    left: 0;
+    height: 260px;
+    opacity: 0.5;
+    position: absolute;
+    top: 400px;
 }

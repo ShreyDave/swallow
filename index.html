@@ -116,7 +116,7 @@
                     <img src="images/first-page.png" alt="main img" class="img-main">
                 </div>
             </div>
-
+            <div class="backgroundClass"></div>
             <div class="comon-m-p">
                 <div class="featured-collection d-flex flex-row justify-content-between align-items-center">
                     <p class="m-0">FEATURED COLLECTION</p>
@@ -200,22 +200,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-                <script>
-                    $(document).ready(function () {
-                        $('.slider').slick({
-                            autoplay: true,
-                            autoplaySpeed: 750,
-                            dots: false,
-                            infinite: true,
-                            speed: 750,
-                            slidesToShow: 4,
-                            slidesToScroll: 1
-                        });
-                    });
-                </script> -->
             </div>
 
             <!-- Top Rank -->
@@ -231,12 +215,20 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div> -->
-                    <select class="form-select select-dropdown" aria-label="Default select example">
+                    <!-- <select class="form-select select-dropdown disabled" aria-label="Default select example">
                         <option selected>top Collections</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
-                    </select>
+                    </select> -->
+                    <div class="d-flex align-items-center">
+                        <select class="select-dropdown">
+                            <option value="1">top Collections</option>
+                            <option value="2">top Collections 2</option>
+                            <option value="3">top Collections 3</option>
+                         </select>
+                         <img src="images/dropdown.svg" alt="">
+                    </div>
                     <ul class="tabination nav-pills d-flex flex-row justify-content-between align-items-center m-0"
                         role="tablist">
                         <button class="nav-link active" data-bs-toggle="pill">1 day</button>
@@ -639,8 +631,6 @@
         </div>
     </div> <!--column banner content-->
     </div> <!--row-->
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="script.js"></script>
