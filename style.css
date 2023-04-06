@@ -400,7 +400,7 @@ body {
 /* slider */
 
 .slider {
-    max-width: 1310px;
+    max-width: 1303px;
     margin-top: 24px;
 }
 
@@ -650,6 +650,7 @@ select {
 }
 
 /* For IE10 */
+
 select::-ms-expand {
     display: none;
 }
@@ -657,10 +658,10 @@ select::-ms-expand {
 .backgroundClass {
     background: linear-gradient(to right, #adff00 0%, #303f11 45%, transparent 50%, transparent 70%, #ff6600 100%);
     filter: blur(160px);
-    width: 98vw;
+    width: 100vw;
     left: 0;
     height: 260px;
     opacity: 0.5;
-    position: absolute;
+    position: fixed;
     top: 400px;
 }
