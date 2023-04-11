@@ -13,7 +13,7 @@
 
 $(document).ready(function () {
     $('.slider').slick({
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 750,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -29,19 +29,13 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 1200,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 760,
+                breakpoint: 577,
                 settings: {
                     slidesToShow: 1,
                 }
