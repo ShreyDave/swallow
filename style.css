@@ -816,6 +816,10 @@ select::-ms-expand {
         width: 378px;
         height: 82px;
     }
+
+    .inputtag {
+        margin: 0px 0px 0px 30px;
+    }
 }
 
 
@@ -848,6 +852,12 @@ select::-ms-expand {
     .navbar {
         padding: 0px 20px;
     }
+
+    .theme {
+        display: none !important;
+    }
+
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -855,12 +865,8 @@ select::-ms-expand {
         display: none !important;
     } */
 
-    .theme {
-        display: none !important;
-    }
-
     .inputtag {
-        margin-left: 80px;
+        margin: 0px 20px;
     }
 
     .card-comon {
@@ -953,7 +959,7 @@ select::-ms-expand {
     }
 
     .inputtag {
-        margin: 0px 20px;
+        display: none !important;
     }
 
     .main-content {
@@ -1030,7 +1036,7 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 576px) {
-    
+
     .card-comon {
         width: 100% !important;
         height: 565px;
@@ -1081,7 +1087,7 @@ select::-ms-expand {
         font-size: 12px
     }
 
-    .shaddow{
+    .shaddow {
         padding: 20px;
     }
 
@@ -1097,5 +1103,108 @@ select::-ms-expand {
 
     .card-comon p {
         font-size: 16px;
+    }
+
+    .navbar img {
+        width: 130px;
+        height: 25px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .digital-tattoos {
+        width: 100%;
+        height: auto;
+    }
+
+    .digital-tattoos h1 {
+        font-size: 20px;
+    }
+
+    .digital-tattoos span {
+        font-size: 20px;
+    }
+
+    .nft {
+        font-size: 11px;
+        margin: 0px 0px 10px;
+    }
+
+    .img-main img {
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+        height: 480px;
+    }
+
+    .featured-collection P {
+        font-size: 19px;
+    }
+
+    .see-all {
+        width: 80px;
+        height: 40px;
+    }
+
+    .see-all p {
+        font-size: 10px;
+    }
+
+    .card-comon {
+        width: 100% !important;
+        height: 362px;
+    }
+
+    .top-collection-1 {
+        padding: 5px;
+    }
+
+    .top-collection-1:hover {
+        padding: 5px;
+    }
+
+    .profile-rank img {
+        width: 40px;
+        height: 40px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    .name-profile-h3 h3 {
+        font-size: 12px;
+    }
+
+    .nick-name-profile-p p {
+        font-size: 10px;
+    }
+
+    .profile {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .connect-wallet p {
+        font-size: 8px;
+    }
+
+    .create-account p {
+        font-size: 8px;
+    }
+
+    .connect-wallet {
+        width: 70px;
+        height: auto;
+    }
+
+    .create-account {
+        width: 70px;
+        height: 40px;
+    }
+
+    .navbar img {
+        width: 110px;
+        height: 20px;
+        cursor: pointer;
     }
 }
