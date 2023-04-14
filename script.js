@@ -13,7 +13,7 @@
 
 $(document).ready(function () {
     $('.slider').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 750,
         slidesToShow: 4,
         slidesToScroll: 1,

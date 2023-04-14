@@ -241,7 +241,7 @@ body {
     height: calc(100vh - 80px);
     background: transparent;
     border: 1px solid transparent;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(0px);
     padding: 20px;
     position: fixed;
     top: 80px;
@@ -799,15 +799,19 @@ select::-ms-expand {
     top: 400px;
 }
 
+.tabination-none {
+    display: none !important;
+}
 
 /* media query */
 
 @media only screen and (max-width: 1399px) {
-            
+
     .card-comon {
         width: 275px !important;
         height: 336px;
     }
+
     .top-collection-1 {
         width: 378px;
         height: 82px;
@@ -823,25 +827,25 @@ select::-ms-expand {
         margin: 0px !important;
     }
 
-    .digital-tattoos span{
+    .digital-tattoos span {
         font-size: 35px;
     }
 
-    .digital-tattoos h1{
+    .digital-tattoos h1 {
         font-size: 35px;
         margin: 0;
     }
 
-    .nft{
+    .nft {
         font-size: 15px;
         margin: 20px 0px;
     }
 
-    .profile{
+    .profile {
         flex-wrap: wrap;
     }
 
-    .navbar{
+    .navbar {
         padding: 0px 20px;
     }
 }
@@ -876,9 +880,9 @@ select::-ms-expand {
         line-height: 1;
     }
 
-    .nft{
+    .nft {
         font-size: 13px;
-        margin: 0px 0px 10px;
+        margin: 0px 0px 15px;
         width: 100%;
     }
 
@@ -894,12 +898,12 @@ select::-ms-expand {
         margin-top: 50px !important;
     }
 
-    .comon-m-p{
+    .comon-m-p {
         margin: 0;
         padding: 0;
     }
 
-    .slider{
+    .slider {
         margin-bottom: 40px;
     }
 }
@@ -912,26 +916,27 @@ select::-ms-expand {
         height: 275px;
     }
 
-    .card-comon p{
+    .card-comon p {
         font-size: 11px;
     }
 
-    .select-dropdown{
+    .select-dropdown {
         width: 241px;
     }
 
-    .tabination{
+    .tabination {
         width: 225px;
     }
 
-    .nick-name-profile-p p{
+    .nick-name-profile-p p {
         font-size: 12px;
     }
-    .top-collection-1{
+
+    .top-collection-1 {
         width: 100%;
     }
 
-    .width-class{
+    .width-class {
         width: 100%;
     }
 
@@ -942,28 +947,28 @@ select::-ms-expand {
 
 }
 
-@media only screen and (max-width: 767px){
-    .navbar{
+@media only screen and (max-width: 767px) {
+    .navbar {
         padding: 20px;
     }
 
-    .inputtag{
+    .inputtag {
         margin: 0px 20px;
     }
 
-    .main-content{
+    .main-content {
         margin: 0px;
     }
 
-    .comon-m-p{
+    .comon-m-p {
         margin: 0;
     }
 
-    .slider{
+    .slider {
         margin-bottom: 24px;
     }
 
-    .select-dropdown{
+    .select-dropdown {
         width: 204px;
         font-size: 20px;
     }
@@ -973,11 +978,11 @@ select::-ms-expand {
         height: 199px;
     }
 
-    .shaddow{
+    .shaddow {
         padding: 0px 0px 10px 10px;
     }
 
-    .card-comon img{
+    .card-comon img {
         width: 20px;
         height: 20px;
     }
@@ -987,7 +992,7 @@ select::-ms-expand {
         height: 10px !important;
     }
 
-    .card-comon p{
+    .card-comon p {
         font-size: 10px;
     }
 
@@ -1004,7 +1009,7 @@ select::-ms-expand {
         height: auto;
     }
 
-    .digital-tattoos{
+    .digital-tattoos {
         width: 100%;
     }
 
@@ -1012,14 +1017,20 @@ select::-ms-expand {
         width: 160px;
         font-size: 15px;
     }
-}
 
-@media only screen and (max-width: 576px){
-    .card-comon {
-        width: 315px !important;
-        height: 385px;
+    .tabination {
+        display: none !important;
     }
 
+    .tabination-none {
+        display: flex !important;
+        width: 100%;
+        margin-top: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    
     .card-comon {
         width: 100% !important;
         height: 565px;
@@ -1036,7 +1047,7 @@ select::-ms-expand {
         height: 40px;
     }
 
-    .create-account p{
+    .create-account p {
         font-size: 10px;
     }
 
@@ -1044,11 +1055,11 @@ select::-ms-expand {
         width: 85px;
     }
 
-    .connect-wallet p{
+    .connect-wallet p {
         font-size: 10px;
     }
 
-    .inputtag{
+    .inputtag {
         display: none !important;
     }
 
@@ -1057,16 +1068,34 @@ select::-ms-expand {
         height: 40px;
     }
 
-    .explore p{
+    .explore p {
         font-size: 12px
     }
 
-    .create{
+    .create {
         width: 100px;
         height: 40px;
     }
 
-    .create p{
+    .create p {
         font-size: 12px
+    }
+
+    .shaddow{
+        padding: 20px;
+    }
+
+    .card-comon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .varified {
+        width: 13px !important;
+        height: 13px !important;
+    }
+
+    .card-comon p {
+        font-size: 16px;
     }
 }
