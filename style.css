@@ -493,6 +493,11 @@ body {
     z-index: 1;
 }
 
+.featured-collection {
+    width: 99%;
+    height: auto;
+}
+
 .featured-collection P {
     width: auto;
     height: auto;
@@ -521,6 +526,11 @@ body {
 /* slider */
 
 .slider {
+    max-width: 100%;
+    margin-top: 24px;
+}
+
+.slider1 {
     max-width: 100%;
     margin-top: 24px;
 }
@@ -573,6 +583,25 @@ body {
     backdrop-filter: blur(15px);
 }
 
+.card-comon-slider-3 {
+    width: 426px !important;
+    height: 364px !important;
+    background: rgba(26, 28, 31, 0.2);
+    border: 1px solid #2C2E31;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+}
+
+.latest-artical {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: fit-content;
+    height: 85px;
+}
+
+
+
 .card-comon-img {
     width: 315px;
     height: 385px;
@@ -582,6 +611,12 @@ body {
 .card-comon-img-slider-2 {
     width: 295px;
     height: 295px;
+    margin: 10px 0px 0px 0px;
+}
+
+.card-comon-img-slider-3 {
+    width: 406px;
+    height: 230px;
     margin: 10px 0px 0px 0px;
 }
 
@@ -599,6 +634,18 @@ body {
     letter-spacing: -0.05em;
     color: #FFFFFF;
     margin: 0px 0px 0px 10px;
+}
+
+.latest-artical p {
+    width: 288px;
+    height: 47px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0;
 }
 
 .shaddow {
@@ -659,6 +706,20 @@ body {
     color: #FFFF08;
     margin: 0px;
     text-transform: uppercase;
+}
+
+
+.latest-artical span {
+    width: 99px;
+    height: 17px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0;
 }
 
 /* .card1 {
@@ -865,7 +926,6 @@ select::-ms-expand {
     opacity: 0.5;
     position: fixed;
     top: 400px;
-    z-index: 0 !important;
 }
 
 .tabination-none {
@@ -928,6 +988,7 @@ select::-ms-expand {
     padding: 20px;
     margin: 0px 20px 0px 0px;
     outline: none;
+    z-index: 10;
 }
 
 ::placeholder {
@@ -952,6 +1013,7 @@ select::-ms-expand {
     text-transform: uppercase;
     border: 1px transparent;
     margin: 0px 20px 0px 0px;
+    z-index: 15;
 }
 
 .email-subscribe button span {
@@ -1007,6 +1069,7 @@ select::-ms-expand {
 .footer1 img {
     width: 152px;
     height: 25px;
+    cursor: pointer;
 }
 
 .footer2 {
