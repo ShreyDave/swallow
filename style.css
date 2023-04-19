@@ -494,8 +494,8 @@ body {
 }
 
 .featured-collection P {
-    width: 289px;
-    height: 30px;
+    width: auto;
+    height: auto;
     /* font-family: 'MonoSpec'; */
     font-style: normal;
     font-weight: 600;
@@ -503,6 +503,7 @@ body {
     line-height: 30px;
     letter-spacing: -0.05em;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .see-all p {
@@ -566,10 +567,22 @@ body {
     position: relative;
 }
 
+.card-comon-slider-2 {
+    background: rgba(26, 28, 31, 0.2);
+    border: 1px solid #2C2E31;
+    backdrop-filter: blur(15px);
+}
+
 .card-comon-img {
     width: 315px;
     height: 385px;
     border-radius: 10px;
+}
+
+.card-comon-img-slider-2 {
+    width: 295px;
+    height: 295px;
+    margin: 10px 0px 0px 0px;
 }
 
 /* .card-comon img {
@@ -598,10 +611,54 @@ body {
     bottom: 0;
 }
 
+.card-comon-slider-2-profile {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+}
+
+.card-comon-slider-2-profile p {
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+.card-comon-slider-2-profile img {
+    width: 60px;
+    height: 60px;
+    margin: 0px 0px 10px 0px;
+}
+
 .varified {
     width: 13px !important;
     height: 13px !important;
     margin: 0px 0px 0px 7px !important;
+}
+
+.playtime {
+    position: absolute;
+    right: 10px;
+    bottom: 80px;
+    width: 110px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin: 0px 10px 10px 0px;
+}
+
+.playtime p {
+    width: auto;
+    height: auto;
+    /* font-family: 'MonoSpec'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0em;
+    color: #FFFF08;
+    margin: 0px;
+    text-transform: uppercase;
 }
 
 /* .card1 {
@@ -808,6 +865,7 @@ select::-ms-expand {
     opacity: 0.5;
     position: fixed;
     top: 400px;
+    z-index: 0 !important;
 }
 
 .tabination-none {
@@ -821,6 +879,7 @@ select::-ms-expand {
     border-radius: 10px;
     margin: 130px 0px 60px 0px;
     padding: 30px;
+    z-index: 5 !important;
 }
 
 .stayin-the-loop {
@@ -868,6 +927,7 @@ select::-ms-expand {
     border-radius: 5px;
     padding: 20px;
     margin: 0px 20px 0px 0px;
+    outline: none;
 }
 
 ::placeholder {
@@ -1006,6 +1066,7 @@ select::-ms-expand {
     margin: 0px 0px 15px 0px;
     cursor: pointer;
 }
+
 /* media query */
 
 @media only screen and (max-width: 1399px) {
@@ -1024,7 +1085,7 @@ select::-ms-expand {
         margin: 0px 0px 0px 30px;
     }
 
-    .card-comon-img{
+    .card-comon-img {
         width: 100%;
         height: auto;
     }
