@@ -535,6 +535,10 @@ body {
     margin-top: 24px;
 }
 
+.slider2 {
+    max-width: 73%;
+}
+
 .slick-next {
     content: '';
     box-sizing: border-box;
@@ -589,6 +593,12 @@ body {
     background: rgba(26, 28, 31, 0.2);
     border: 1px solid #2C2E31;
     backdrop-filter: blur(15px);
+    border-radius: 10px;
+}
+
+.card-comon-slider-blur {
+    background: linear-gradient(0deg, #2E3135 0%, rgba(26, 28, 31, 0) 100%);
+    border: 1px solid #2C2E31;
     border-radius: 10px;
 }
 
@@ -722,21 +732,85 @@ body {
     margin: 0;
 }
 
-/* .card1 {
-    background-image: url('images/card1.png');
-} */
-
-/* .card2 {
-    background-image: url('images/card2.png');
+.slider-background-color {
+    width: 1314px;
+    height: 440px;
+    background: linear-gradient(0deg, #2E3135 0%, rgba(26, 28, 31, 0) 100%);
+    border: 1px solid #2C2E31;
+    border-radius: 10px;
 }
 
-.card3 {
-    background-image: url('images/card3.png');
+.card-comon-slider-5 {
+    width: 420px !important;
+    height: 360px;
+    background: #1A1C1F;
+    border: 1px solid #3A3D41;
+    border-radius: 10px;
+    margin: 0px !important;
 }
 
-.card4 {
-    background-image: url('images/card4.png');
-} */
+.top-artist {
+    margin: 0px 0px 0px 40px;
+}
+
+.top-artist span {
+    width: fit-content;
+    height: auto;
+    /* font-family: 'MonoSpec'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.top-artist-name{
+    width: 40%;
+    height: 100%;
+    margin: 0px 0px 0px 20px;
+}
+
+.top-artist-p {
+    width: fit-content;
+    height: auto;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 15px 0px 30px 0px;
+
+}
+
+.top-artist-name img {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px 0px 0px;
+}
+
+.top-artist-name span {
+    width: fit-content;
+    height: auto;
+    /* font-family: 'MonoSpec'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.card-comon-img-slider-5{
+    width: 400px;
+    height: 270px;
+    margin: 10px 10px 0px 10px;
+}
 
 /* Top collections */
 
