@@ -600,6 +600,8 @@ body {
     background: linear-gradient(0deg, #2E3135 0%, rgba(26, 28, 31, 0) 100%);
     border: 1px solid #2C2E31;
     border-radius: 10px;
+    width: 315px !important;
+    height: 315px;
 }
 
 .latest-artical {
