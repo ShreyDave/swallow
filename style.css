@@ -9,10 +9,6 @@ body {
     height: 100vh;
 }
 
-.container {
-    padding: 0;
-}
-
 /*  */
 .menuIcon {
     background: transparent;
@@ -1235,7 +1231,7 @@ select::-ms-expand {
 
     .card-comon {
         width: 230px !important;
-        height: 281px;
+        height: auto;
         margin: 0px !important;
     }
 
@@ -1287,7 +1283,7 @@ select::-ms-expand {
 
     .card-comon {
         width: 230px !important;
-        height: 281px;
+        height: auto;
         margin: 0px !important;
     }
 
@@ -1335,7 +1331,7 @@ select::-ms-expand {
 
     .card-comon {
         width: 225px !important;
-        height: 275px;
+        height: auto;
     }
 
     .card-comon p {
@@ -1397,7 +1393,7 @@ select::-ms-expand {
 
     .card-comon {
         width: 162px !important;
-        height: 199px;
+        height: auto;
     }
 
     .shaddow {
@@ -1578,7 +1574,7 @@ select::-ms-expand {
 
     .card-comon {
         width: 100% !important;
-        height: 362px;
+        height: auto;
     }
 
     .top-collection-1 {
